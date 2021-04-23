@@ -1,10 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
 	margin:0;
 	font-family: 'Roboto'
 }
 
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -19,8 +27,12 @@ h1,h2,h3,h4,h5,h6 {
 /*Шапка*/
 
 .header_inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 /*Навигация шапки*/
@@ -63,6 +75,8 @@ h1,h2,h3,h4,h5,h6 {
 	margin-left: 25px;
 	outline-color: #EA5B5B;
 	font-size: 12px;
+	-webkit-transition: background .1s linear;
+	-o-transition: background .1s linear;
 	transition: background .1s linear;
 }
 
@@ -76,7 +90,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .intro {
 	width: 100%
-	height:100vh;
 }
 
 
@@ -97,7 +110,9 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 30px;
 	font-weight: bold;
 	display: inline-block;
-	transform: rotate(-25deg);
+	-webkit-transform: rotate(-25deg);
+	    -ms-transform: rotate(-25deg);
+	        transform: rotate(-25deg);
     }
 
 .transform_oblique {
@@ -108,7 +123,9 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 30px;
 	font-weight: bold;
 	display: inline-block;
-	transform: rotate(25deg);
+	-webkit-transform: rotate(25deg);
+	    -ms-transform: rotate(25deg);
+	        transform: rotate(25deg);
 }
 
 .transform_braces {
@@ -119,7 +136,9 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 30px;
 	font-weight: bold;
 	display: inline-block;
-	transform: rotate(25deg);
+	-webkit-transform: rotate(25deg);
+	    -ms-transform: rotate(25deg);
+	        transform: rotate(25deg);
 }
 
 .transform_div_2 {
@@ -130,7 +149,9 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 30px;
 	font-weight: bold;
 	display: inline-block;
-	transform: rotate(25deg);
+	-webkit-transform: rotate(25deg);
+	    -ms-transform: rotate(25deg);
+	        transform: rotate(25deg);
 }
 
 .transform_sharp {
@@ -141,7 +162,9 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 30px;
 	font-weight: bold;
 	display: inline-block;
-	transform: rotate(25deg);
+	-webkit-transform: rotate(25deg);
+	    -ms-transform: rotate(25deg);
+	        transform: rotate(25deg);
 }
 
 /*Первый блок*/
@@ -171,6 +194,8 @@ h1,h2,h3,h4,h5,h6 {
 	outline-color: #EA5B5B;
 	font-size: 12px;
 	background-color: #f74a00;
+	-webkit-transition: background .1s linear;
+	-o-transition: background .1s linear;
 	transition: background .1s linear;
 }
 
@@ -187,8 +212,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .section_whatIDo {
-	width: 100%
-	height:100vh;
+	width: 100%;
 	padding-bottom: 100px;
 	padding-top: 150px;
 
@@ -203,8 +227,11 @@ h1,h2,h3,h4,h5,h6 {
 }
  /*Картинки с описанием под ними*/
 .about {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 
 .description_img {
@@ -215,6 +242,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .cost_button_block {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-left: 520px; /*выровнять по центру кнопку*/
 }
@@ -227,6 +256,8 @@ h1,h2,h3,h4,h5,h6 {
 	outline-color: #EA5B5B;
 	font-size: 12px;
 	background-color: #f74a00;
+	-webkit-transition: background .1s linear;
+	-o-transition: background .1s linear;
 	transition: background .1s linear;
 
 }
@@ -243,20 +274,24 @@ h1,h2,h3,h4,h5,h6 {
 /*Третий блок, примеры работ*/
 
 .example_work {
-	width: 100%
-	height:100vh;
+	width: 100%;
 	margin-bottom: 100px;
 }
 
 .examples {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 
 }
 
 /*Четвертый блок, стоимость работ*/
 
 .prices {
+	background: -webkit-gradient(linear,right top, left bottom,from(#ff2e94),to(#fd9058));
+	background: -o-linear-gradient(top right,#ff2e94,#fd9058);
 	background: linear-gradient(to bottom left,#ff2e94,#fd9058);
 }
 
@@ -289,8 +324,11 @@ footer {
 }
 
 .footer_objects {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	height: 170px;
 }
 /*Навигация по сайту  в футере*/
@@ -299,6 +337,8 @@ footer {
 }
 
 .services_footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	text-decoration: none;
 	margin-bottom: 10px;
@@ -306,6 +346,8 @@ footer {
 	margin-left: 15px;
 }
 .cost_footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	text-decoration: none;
 	color: #8993ad;
@@ -314,6 +356,8 @@ footer {
 
 }
 .portfolio_footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	text-decoration: none;
 	margin-bottom: 10px;
@@ -339,8 +383,13 @@ footer {
 
 .tel_email {
 	padding-top: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-  	flex-direction: column;
+  	-webkit-box-orient: vertical;
+  	-webkit-box-direction: normal;
+  	    -ms-flex-direction: column;
+  	        flex-direction: column;
 
 }
 
@@ -475,6 +524,8 @@ a.youtube1 {
 	border: 1px solid #EA5B5B;
 	outline-color: #EA5B5B;
 	font-size: 12px;
+	-webkit-transition: background .1s linear;
+	-o-transition: background .1s linear;
 	transition: background .1s linear;
 }
 
@@ -497,5 +548,4 @@ a.youtube1 {
 	padding: 22px;
 	text-align: center;
 }
-
 
